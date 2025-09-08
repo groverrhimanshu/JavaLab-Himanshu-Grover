@@ -1,0 +1,26 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+ 
+<suite name="EcommerceSuite">
+    <test name="GroupTest">
+        <groups>
+        <define name="functest">       	
+        		<include name="smoke"></include>   
+        		<include name="regression"></include>   	        	
+        </define>
+        	    <run>
+        	       <include name="functest">
+        	       </include>
+        	    </run>
+        </groups>
+        <classes>
+            <class name="testngday3.EcommerceTest">
+            <methods>
+                    
+                    <include name="setup"/>
+                    
+                    <include name=".*"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

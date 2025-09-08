@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Suite 1">
+ 
+  <test name="Tests">
+    <groups>
+      <define name="all">
+				<include name="HealthSetup" />
+				<include name="Login" />
+      </define>
+      <run>
+        <include name="all"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="testngday4.dependencies"/>
+    </classes>
+  </test>
+ 
+</suite>
