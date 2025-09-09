@@ -31,7 +31,7 @@ public class AmazonLogin {
 		username.sendKeys("groverhimanshu2001@gmail.com");
 		driver.findElement(By.xpath("//*[@id=\"continue\"]")).click();
 		WebElement password = driver.findElement(By.id("ap_password"));
-		password.sendKeys("kakudolu@19A");
+		password.sendKeys("");
 	}
  
 	@When("I click on login button")
@@ -51,3 +51,4 @@ public class AmazonLogin {
 	}*/
 
 }
+
